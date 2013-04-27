@@ -8,12 +8,12 @@ Gem::Specification.new do |spec|
   spec.version       = Chef::Berks::VERSION
   spec.authors       = ["Ranjib Dey"]
   spec.email         = ["dey.ranjib@gmail.com"]
-  spec.description   = %q{Allows chef-client to grab cookbooks on the fly using berkshelf}
+  spec.description   = %q{Allows chef-client/solo to grab cookbooks on the fly using berkshelf}
   spec.summary       = spec.description
   spec.homepage      = "https://github.com/ranjib/chef-berks"
   spec.license       = "MIT"
 
-  spec.files         = Dir['lib/**/*']
+  spec.files         = Dir['lib/**/*.rb']
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
